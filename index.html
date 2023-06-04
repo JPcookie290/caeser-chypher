@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="main.js" defer></script>
+    <title>Caeser Cyphen</title>
+</head>
+
+<body>
+    <header>
+        <h1>Caesar Encryption</h1>
+    </header>
+    <main>
+        <div class="beschreibung">
+            <p>Text eingeben und die Anzahl um die verschoben werden soll eingeben.</p>
+        </div>
+        <div class="eingabe">
+            <input type="text" placeholder="TEXT" class="text" id="textEingabe">
+            <input type="number" placeholder="5" class="nummer" id="zahlVerschieben">
+        </div>
+        <div class="buttons">
+            <button class="encrypt" id="encrypt">Encryption</button>
+            <button class="reset" id="reset">Reset</button>
+        </div>
+        <div class="ausgabe" id="ausgabe">
+            ###
+        </div>
+    </main>
+</body>
+
+</html>
