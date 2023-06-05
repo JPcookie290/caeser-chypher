@@ -6,14 +6,19 @@ const reset = document.getElementById('reset');
 
 //let test = text.split('').map(() => shiftLetter(letter,3)).join('') Christoph weg mit map funktion
 
+/* function to change the letters */
+
 function shiftLetter(letter, num) {
     letter = letter.charCodeAt();
     num = letter + num;
+    //console.log(num);
     let changed = String.fromCharCode(num);
+    //console.log(changed, typeof changed);
     return changed
 }
 
-//console.log(shiftLetter("a",4));
+
+/* function for the encrypt button */
 
 encrypt.addEventListener('click', encryptWord);
 
@@ -27,6 +32,8 @@ function encryptWord() {
     });
     ausgabe.innerHTML = encryption.join("")
 }
+
+/* function for the reset button */
 
 reset.addEventListener('click', clear);
 
