@@ -8,7 +8,7 @@ shiftLetter()
 Verschiebt den eingegeben Text um die gewünschte Zahl im Alphabeth.
 
 ```
-encryptWord()()
+encryptWord()
 ```
 Der eingebene Text wird ein Array, welches mit der Funktion shiftLetter() bearbeitet wird und dann wieder zusammen gefügt,
 

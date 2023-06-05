@@ -17,7 +17,6 @@ function shiftLetter(letter, num) {
     return changed
 }
 
-
 /* function for the encrypt button */
 
 encrypt.addEventListener('click', encryptWord);
@@ -32,6 +31,8 @@ function encryptWord() {
     });
     ausgabe.innerHTML = encryption.join("")
 }
+
+/* function to check */
 
 /* function for the reset button */
 
