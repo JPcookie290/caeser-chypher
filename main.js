@@ -31,7 +31,7 @@ function encryptWord() {
 reset.addEventListener('click', clear);
 
 function clear() {
-    textEingabe.textContent = ""
-    zahlVerschieben.innerHTML = 0
+    textEingabe.value = ""
+    zahlVerschieben.value = ""
     ausgabe.innerHTML = "###"
 }
