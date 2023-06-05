@@ -10,11 +10,33 @@ const reset = document.getElementById('reset');
 
 function shiftLetter(letter, num) {
     letter = letter.charCodeAt();
-    num = letter + num;
-    //console.log(num);
-    let changed = String.fromCharCode(num);
-    //console.log(changed, typeof changed);
-    return changed
+    if(letter >= 65 && letter <= 90){
+        //console.log(letter, ' ist ein Großbuchstabe.');
+        let zahl = letter + num;
+        if(zahl > 90){
+            zahl = 64 + num; 
+        }
+        if(zahl < 65){
+            zahl = 91 + num;
+        }
+        let changed = String.fromCharCode(zahl);
+        return changed
+    } else if(letter >= 97 && letter <= 122){
+        //console.log(letter, ' ist ein Kleinbuchstabe.');
+        let zahl = letter + num;
+        if(zahl > 122){
+            zahl = 96 + num; 
+        }
+        if(zahl < 97){
+            zahl = 123 + num;
+        }
+        let changed = String.fromCharCode(zahl);
+        return changed
+    } else{
+        zahl = letter;
+        let changed = String.fromCharCode(zahl);
+        return changed
+    }
 }
 
 /* function for the encrypt button */
@@ -31,8 +53,6 @@ function encryptWord() {
     });
     ausgabe.innerHTML = encryption.join("")
 }
-
-/* function to check */
 
 /* function for the reset button */
 
